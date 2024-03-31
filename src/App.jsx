@@ -8,6 +8,7 @@ import { Toaster } from "react-hot-toast";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ThemeProvider } from "@material-tailwind/react";
 import AuditForm from "./pages/AuditForm";
+import AuditionPage from "./pages/AuditionPage";
 
 function App() {
   const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ function App() {
             <Route path="/musical" element={<MusiclPage />} />
             <Route path="/concert" element={<ConcertPage />} />
             <Route path="/auditform" element={<AuditForm />} />
+            <Route path="/audition" element={<AuditionPage />} />
             {/* <Route index element={<HomePage />} /> */}
           </Routes>
           <Toaster />
